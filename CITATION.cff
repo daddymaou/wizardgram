@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "wizardgram"
+abstract: "Async Telegram bot framework for Python."
+authors:
+  - family-names: "Maou"
+    given-names: "Daddy"
+    alias: "daddymaou"
+    website: "https://github.com/daddymaou"
+version: 0.1.0
+date-released: "2026-10-01"
+license: Apache-2.0
+repository-code: "https://github.com/daddymaou/wizardgram"
