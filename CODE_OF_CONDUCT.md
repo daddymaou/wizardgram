@@ -11,7 +11,7 @@ officially representing the project in public spaces.
 
 ## Reporting
 
-Report unacceptable behavior to daddymaou@users.noreply.github.com. All
+Report unacceptable behavior to daddymaouu@gmail.com. All
 complaints will be reviewed and investigated promptly and fairly. The
 maintainer is obligated to respect the privacy and security of the reporter.
 
