@@ -8,14 +8,13 @@ Semantic Versioning (https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-10-01
+
 ### Added
-- Initial project scaffold.
-- Transport layer with flood control and multipart streaming.
-- Context with reply, edit, and callback-query helpers.
-- Bot with polling, webhooks, middleware chain, and routing.
-- Fluent keyboard builders.
-- Finite state machines (Scene, Stage).
-- Verification coverage system with `wizardgram check` CLI.
-- Testing utilities (TestBot, Updates).
-- Five runnable bot templates.
-- MkDocs Material documentation site.
+- Initial public release of the async Telegram bot framework.
+- HTTP transport with retries, flood control, and multipart uploads.
+- Context helpers for messages, callback queries, and media.
+- Polling, webhook handling, routing, and middleware.
+- Fluent keyboard builders and in-memory scene state machines.
+- Bot API coverage status CLI and test utilities.
+- Five example bots and MkDocs documentation.

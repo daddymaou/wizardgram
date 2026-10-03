@@ -1,6 +1,7 @@
 # Examples
 
-Runnable bot templates. Each is a standalone script.
+Runnable bot templates. Run these scripts from the repository root after installing
+wizardgram and setting the `WIZARDGRAM_TOKEN` environment variable.
 
 | File | What it shows |
 |------|---------------|
@@ -10,7 +11,26 @@ Runnable bot templates. Each is a standalone script.
 | middleware_bot.py | Logging and rate limiting. |
 | webhook_bot.py | Webhook deployment with FastAPI. |
 
-Run any example:
+For example, in PowerShell:
 
-    export WIZARDGRAM_TOKEN="your_token_here"
-    python examples/echo_bot.py
+```powershell
+$env:WIZARDGRAM_TOKEN = "your-telegram-bot-token"
+python examples/echo_bot.py
+```
+
+On macOS or Linux:
+
+```bash
+export WIZARDGRAM_TOKEN="your-telegram-bot-token"
+python examples/echo_bot.py
+```
+
+The webhook example additionally requires FastAPI and Uvicorn:
+
+```bash
+python -m pip install fastapi uvicorn
+uvicorn examples.webhook_bot:app --host 0.0.0.0 --port 8000
+```
+
+The default FSM state store is in-memory. Scene state is lost when the bot process
+restarts.
