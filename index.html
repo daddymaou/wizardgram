@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>wizardgram | Async Telegram bot framework for Python</title>
+    <meta name="description" content="wizardgram is an async Telegram bot framework for Python. Learn the install steps, quickstart flow, middleware, scenes, keyboards, webhooks, file uploads, and project layout." />
+    <link rel="canonical" href="https://daddymaou.github.io/wizardgram/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="wizardgram" />
+    <meta property="og:description" content="Async Telegram bot framework for Python." />
+    <meta property="og:url" content="https://daddymaou.github.io/wizardgram/" />
+    <meta property="og:image" content="https://daddymaou.github.io/wizardgram/assets/img/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="wizardgram" />
+    <meta name="twitter:description" content="Async Telegram bot framework for Python." />
+    <meta name="twitter:image" content="https://daddymaou.github.io/wizardgram/assets/img/og-image.svg" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/themes.css" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('wizardgram-theme');
+          var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+        } catch (error) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+  </head>
+  <body data-page="welcome" data-root="." data-current-path="index.html">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header id="site-header"></header>
+    <div class="page-shell">
+      <div class="page-layout">
+        <aside id="sidebar" class="sidebar" aria-label="Documentation navigation"></aside>
+
+        <main id="main-content" class="content-wrap">
+          <div class="page-hero">
+            <div class="page-hero__eyebrow">
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M15 4l5 9 10 5-10 5-5 9-5-9-10-5 10-5 5-9z" fill="currentColor"/>
+              </svg>
+              Async Telegram bot framework for Python.
+            </div>
+            <div class="page-hero__title-wrap">
+              <h1>wizardgram</h1>
+            </div>
+            <svg class="title-wave" viewBox="0 0 360 24" aria-hidden="true">
+              <path d="M0 14c26-12 44-12 72 0s47 12 72 0 44-12 70 0 47 12 71 0 45-12 75 0" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <p class="page-hero__summary">A compact toolkit for Telegram bots in Python, with examples for middleware, scenes, keyboards, webhooks, and file uploads.</p>
+          </div>
+
+          <div class="article-wrap">
+            <article class="doc">
+              <section>
+                <h2>Welcome to the spellbook</h2>
+                <p class="lead">wizardgram keeps the framework simple: define handlers, attach middleware, manage scenes, and publish a bot that can poll or accept webhooks.</p>
+                <p>The docs on this site are built around the project’s own guidance and examples. Each page is meant to be quick to scan, while still giving you the exact snippets the package documents.</p>
+              </section>
+
+              <section>
+                <h2>Start here</h2>
+                <div class="docs-grid">
+                  <a class="card" href="./docs/install.html">
+                    <span class="smallcaps">Install</span>
+                    <h3>Install wizardgram</h3>
+                    <p>Set up the package and prepare your token.</p>
+                  </a>
+                  <a class="card" href="./docs/quickstart.html">
+                    <span class="smallcaps">Quickstart</span>
+                    <h3>Run your first bot</h3>
+                    <p>Start with a minimal command handler.</p>
+                  </a>
+                  <a class="card" href="./docs/middleware.html">
+                    <span class="smallcaps">Spells</span>
+                    <h3>Middleware</h3>
+                    <p>Add logging and update-flow behaviors.</p>
+                  </a>
+                  <a class="card" href="./docs/examples.html">
+                    <span class="smallcaps">Grimoire</span>
+                    <h3>Examples</h3>
+                    <p>Browse the bundled example apps.</p>
+                  </a>
+                </div>
+              </section>
+
+              <section>
+                <h2>Coverage and confidence</h2>
+                <p>The project tracks the current Bot API and documents what is verified. That helps you understand where the framework is covered and where a feature is inferred rather than fully exercised.</p>
+                <div class="callout">
+                  <div class="callout__title"><svg class="callout__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.7 5.6 6.3 1.4-4.7 4.2 1.3 6.4-5.6-2.9-5.5 2.9 1.3-6.4-4.6-4.2 6.2-1.4L12 2z" fill="currentColor"/></svg> Verified and inferred</div>
+                  <p>Bot API methods can be verified in the bundled method table, while some multipart upload behaviors are described as inferred when they have been exercised with mocked HTTP requests.</p>
+                </div>
+              </section>
+            </article>
+
+            <aside class="page-aside">
+              <nav class="page-toc" id="page-toc" aria-label="On this page"></nav>
+            </aside>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer id="site-footer" class="site-footer"></footer>
+    <noscript>
+      <nav aria-label="Documentation links">
+        <ul>
+          <li><a href="./index.html">Welcome</a></li>
+          <li><a href="./docs/install.html">Install</a></li>
+          <li><a href="./docs/quickstart.html">Quickstart</a></li>
+          <li><a href="./docs/middleware.html">Middleware</a></li>
+          <li><a href="./docs/bot-api-coverage.html">Bot API coverage</a></li>
+          <li><a href="./docs/scenes-fsm.html">Scenes &amp; FSM</a></li>
+          <li><a href="./docs/keyboards.html">Keyboards</a></li>
+          <li><a href="./docs/webhooks.html">Webhooks</a></li>
+          <li><a href="./docs/file-uploads.html">File uploads</a></li>
+          <li><a href="./docs/examples.html">Examples</a></li>
+          <li><a href="./docs/coverage-confidence.html">Coverage confidence</a></li>
+          <li><a href="./docs/project-layout.html">Project layout</a></li>
+          <li><a href="./docs/contributing.html">Contributing &amp; license</a></li>
+        </ul>
+      </nav>
+    </noscript>
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>

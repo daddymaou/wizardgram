@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quickstart · wizardgram</title>
+    <meta name="description" content="Create a minimal wizardgram bot and run it with WIZARDGRAM_TOKEN set in your shell." />
+    <link rel="canonical" href="https://daddymaou.github.io/wizardgram/docs/quickstart.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Quickstart · wizardgram" />
+    <meta property="og:description" content="Create a minimal wizardgram bot and run it with WIZARDGRAM_TOKEN set in your shell." />
+    <meta property="og:url" content="https://daddymaou.github.io/wizardgram/docs/quickstart.html" />
+    <meta property="og:image" content="https://daddymaou.github.io/wizardgram/assets/img/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Quickstart · wizardgram" />
+    <meta name="twitter:description" content="Create a minimal wizardgram bot and run it with WIZARDGRAM_TOKEN set in your shell." />
+    <meta name="twitter:image" content="https://daddymaou.github.io/wizardgram/assets/img/og-image.svg" />
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/tokens.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/themes.css" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('wizardgram-theme');
+          var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+        } catch (error) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+  </head>
+  <body data-page="quickstart" data-root=".." data-current-path="docs/quickstart.html">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header id="site-header"></header>
+    <div class="page-shell">
+      <div class="page-layout">
+        <aside id="sidebar" class="sidebar" aria-label="Documentation navigation"></aside>
+
+        <main id="main-content" class="content-wrap">
+          <div class="page-hero">
+            <div class="page-hero__eyebrow">
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M15 4l5 9 10 5-10 5-5 9-5-9-10-5 10-5 5-9z" fill="currentColor"/>
+              </svg>
+              Begin here
+            </div>
+            <div class="page-hero__title-wrap">
+              <h1>Quickstart</h1>
+            </div>
+            <svg class="title-wave" viewBox="0 0 360 24" aria-hidden="true">
+              <path d="M0 14c26-12 44-12 72 0s47 12 72 0 44-12 70 0 47 12 71 0 45-12 75 0" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <p class="page-hero__summary">Set up a minimal handler and run the bot with your token.</p>
+          </div>
+
+          <div class="article-wrap">
+            <article class="doc">
+              <section>
+                <h2>Minimal bot</h2>
+                <div class="code-block">
+                  <div class="code-block__header"><span class="code-block__lang">python</span><button class="copy-button" type="button" aria-label="Copy quickstart code">Copy</button></div>
+                  <code data-lang="python">import wizardgram
+
+bot = wizardgram.Bot(token="YOUR_BOT_TOKEN")
+
+@bot.command("start")
+async def start(ctx: wizardgram.Context) -> None:
+    await ctx.reply("Hello!")
+
+if __name__ == "__main__":
+    bot.run()</code>
+                </div>
+                <p>This creates a bot and handles the <code>/start</code> command by replying with a message. It is the smallest pattern for getting a bot running with wizardgram.</p>
+              </section>
+
+              <section>
+                <h2>Token setup</h2>
+                <p>Set your token before running the script. The project documents both a bash and PowerShell example.</p>
+
+                <div class="code-block">
+                  <div class="code-block__header"><span class="code-block__lang">bash</span><button class="copy-button" type="button" aria-label="Copy bash export command">Copy</button></div>
+                  <code data-lang="bash">export WIZARDGRAM_TOKEN="your-token-here"</code>
+                </div>
+
+                <div class="code-block">
+                  <div class="code-block__header"><span class="code-block__lang">powershell</span><button class="copy-button" type="button" aria-label="Copy powershell export command">Copy</button></div>
+                  <code data-lang="powershell">$env:WIZARDGRAM_TOKEN="..."</code>
+                </div>
+
+                <div class="callout">
+                  <div class="callout__title"><svg class="callout__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" fill="currentColor"/></svg> Heads-up</div>
+                  <p>Use your token in the environment before you start the bot process.</p>
+                </div>
+              </section>
+            </article>
+
+            <aside class="page-aside">
+              <nav class="page-toc" id="page-toc" aria-label="On this page"></nav>
+            </aside>
+          </div>
+
+          <nav class="page-nav" aria-label="Page navigation"></nav>
+        </main>
+      </div>
+    </div>
+
+    <footer id="site-footer" class="site-footer"></footer>
+    <noscript>
+      <nav aria-label="Documentation links">
+        <ul>
+          <li><a href="../index.html">Welcome</a></li>
+          <li><a href="./install.html">Install</a></li>
+          <li><a href="./quickstart.html">Quickstart</a></li>
+          <li><a href="./middleware.html">Middleware</a></li>
+          <li><a href="./bot-api-coverage.html">Bot API coverage</a></li>
+          <li><a href="./scenes-fsm.html">Scenes &amp; FSM</a></li>
+          <li><a href="./keyboards.html">Keyboards</a></li>
+          <li><a href="./webhooks.html">Webhooks</a></li>
+          <li><a href="./file-uploads.html">File uploads</a></li>
+          <li><a href="./examples.html">Examples</a></li>
+          <li><a href="./coverage-confidence.html">Coverage confidence</a></li>
+          <li><a href="./project-layout.html">Project layout</a></li>
+          <li><a href="./contributing.html">Contributing &amp; license</a></li>
+        </ul>
+      </nav>
+    </noscript>
+    <script type="module" src="../assets/js/main.js"></script>
+  </body>
+</html>

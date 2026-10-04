@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="wizardgram favicon">
+  <rect width="128" height="128" rx="24" fill="#f4ecd8"/>
+  <path d="M64 16c16 0 28 12 28 28 0 11-6 17-15 22 7 7 11 14 11 23 0 17-14 29-31 29-17 0-31-12-31-29 0-9 4-16 12-23-9-5-15-11-15-22 0-16 12-28 28-28 10 0 18 4 23 10 5-6 13-10 23-10z" fill="#6d4c88"/>
+  <path d="M57 35h14v32H57zm0 39h14v15H57z" fill="#f4ecd8"/>
+  <circle cx="94" cy="28" r="7" fill="#c29b42"/>
+  <circle cx="30" cy="101" r="6" fill="#c29b42"/>
+</svg>
