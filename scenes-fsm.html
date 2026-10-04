@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scenes &amp; FSM · wizardgram</title>
+    <meta name="description" content="Build multi-step Telegram flows with Scene and Stage in wizardgram." />
+    <link rel="canonical" href="https://daddymaou.github.io/wizardgram/docs/scenes-fsm.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Scenes &amp; FSM · wizardgram" />
+    <meta property="og:description" content="Build multi-step Telegram flows with Scene and Stage in wizardgram." />
+    <meta property="og:url" content="https://daddymaou.github.io/wizardgram/docs/scenes-fsm.html" />
+    <meta property="og:image" content="https://daddymaou.github.io/wizardgram/assets/img/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Scenes &amp; FSM · wizardgram" />
+    <meta name="twitter:description" content="Build multi-step Telegram flows with Scene and Stage in wizardgram." />
+    <meta name="twitter:image" content="https://daddymaou.github.io/wizardgram/assets/img/og-image.svg" />
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/tokens.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/themes.css" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('wizardgram-theme');
+          var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+        } catch (error) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+  </head>
+  <body data-page="scenes-fsm" data-root=".." data-current-path="docs/scenes-fsm.html">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header id="site-header"></header>
+    <div class="page-shell">
+      <div class="page-layout">
+        <aside id="sidebar" class="sidebar" aria-label="Documentation navigation"></aside>
+
+        <main id="main-content" class="content-wrap">
+          <div class="page-hero">
+            <div class="page-hero__eyebrow">
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M15 4l5 9 10 5-10 5-5 9-5-9-10-5 10-5 5-9z" fill="currentColor"/>
+              </svg>
+              Spells
+            </div>
+            <div class="page-hero__title-wrap">
+              <h1>Scenes &amp; FSM</h1>
+            </div>
+            <svg class="title-wave" viewBox="0 0 360 24" aria-hidden="true">
+              <path d="M0 14c26-12 44-12 72 0s47 12 72 0 44-12 70 0 47 12 71 0 45-12 75 0" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <p class="page-hero__summary">Guide multi-step Telegram flows with scene state and stages.</p>
+          </div>
+
+          <div class="article-wrap">
+            <article class="doc">
+              <section>
+                <h2>Scene setup</h2>
+                <div class="code-block">
+                  <div class="code-block__header"><span class="code-block__lang">python</span><button class="copy-button" type="button" aria-label="Copy scene setup">Copy</button></div>
+                  <code data-lang="python">from wizardgram import Scene, Stage
+
+stage = Stage([Scene("signup", [collect_name, collect_city])])
+bot.use(stage.middleware())</code>
+                </div>
+                <p>This demonstrates how a stage can manage a multi-step flow. Each scene holds an ordered list of steps and the stage keeps track of where a chat is in that flow.</p>
+              </section>
+
+              <section>
+                <h2>State and transitions</h2>
+                <p>Scene state is shared through the current scene context, which makes it useful for multi-step form flows that gather a little information and then continue to the next step.</p>
+                <div class="note">
+                  <strong>Note:</strong> The project documents the default in-memory state store. That means scene progress is not persistent across restarts.
+                </div>
+              </section>
+            </article>
+
+            <aside class="page-aside">
+              <nav class="page-toc" id="page-toc" aria-label="On this page"></nav>
+            </aside>
+          </div>
+
+          <nav class="page-nav" aria-label="Page navigation"></nav>
+        </main>
+      </div>
+    </div>
+
+    <footer id="site-footer" class="site-footer"></footer>
+    <noscript>
+      <nav aria-label="Documentation links">
+        <ul>
+          <li><a href="../index.html">Welcome</a></li>
+          <li><a href="./install.html">Install</a></li>
+          <li><a href="./quickstart.html">Quickstart</a></li>
+          <li><a href="./middleware.html">Middleware</a></li>
+          <li><a href="./bot-api-coverage.html">Bot API coverage</a></li>
+          <li><a href="./scenes-fsm.html">Scenes &amp; FSM</a></li>
+          <li><a href="./keyboards.html">Keyboards</a></li>
+          <li><a href="./webhooks.html">Webhooks</a></li>
+          <li><a href="./file-uploads.html">File uploads</a></li>
+          <li><a href="./examples.html">Examples</a></li>
+          <li><a href="./coverage-confidence.html">Coverage confidence</a></li>
+          <li><a href="./project-layout.html">Project layout</a></li>
+          <li><a href="./contributing.html">Contributing &amp; license</a></li>
+        </ul>
+      </nav>
+    </noscript>
+    <script type="module" src="../assets/js/main.js"></script>
+  </body>
+</html>
