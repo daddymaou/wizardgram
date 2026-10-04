@@ -1,0 +1,40 @@
+html[data-theme="dark"] .site-header {
+  background: rgba(23, 20, 42, 0.88);
+}
+
+html[data-theme="dark"] .brand,
+html[data-theme="dark"] .copy-button,
+html[data-theme="dark"] .search-result,
+html[data-theme="dark"] .page-toc,
+html[data-theme="dark"] .sidebar,
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .page-hero,
+html[data-theme="dark"] .margin-note,
+html[data-theme="dark"] .icon-button,
+html[data-theme="dark"] .nav-toggle,
+html[data-theme="dark"] .search-panel {
+  background: rgba(31, 27, 44, 0.92);
+}
+
+html[data-theme="dark"] .code-block {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+html[data-theme="dark"] .theme-toggle .theme-toggle__sun { display: none; }
+html[data-theme="light"] .theme-toggle .theme-toggle__moon { display: none; }
+
+html[data-theme="dark"] .token-keyword { color: #d8b5ff; }
+html[data-theme="dark"] .token-string { color: #8fe4c3; }
+html[data-theme="dark"] .token-comment { color: #c0b08d; }
+html[data-theme="dark"] .token-decorator { color: #f7bf73; }
+html[data-theme="dark"] .token-number { color: #ffb4a9; }
+html[data-theme="dark"] .token-attr { color: #9db7ff; }
+
+html[data-theme="dark"] .search-results .search-group h3,
+html[data-theme="dark"] .sidebar__label,
+html[data-theme="dark"] .page-toc__title,
+html[data-theme="dark"] .page-hero__eyebrow,
+html[data-theme="dark"] .site-footer,
+html[data-theme="dark"] .margin-note h3 {
+  color: var(--color-ink-soft);
+}

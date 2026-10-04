@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Webhooks · wizardgram</title>
+    <meta name="description" content="Handle Telegram webhook requests in wizardgram with bot.handle_webhook." />
+    <link rel="canonical" href="https://daddymaou.github.io/wizardgram/docs/webhooks.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Webhooks · wizardgram" />
+    <meta property="og:description" content="Handle Telegram webhook requests in wizardgram with bot.handle_webhook." />
+    <meta property="og:url" content="https://daddymaou.github.io/wizardgram/docs/webhooks.html" />
+    <meta property="og:image" content="https://daddymaou.github.io/wizardgram/assets/img/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Webhooks · wizardgram" />
+    <meta name="twitter:description" content="Handle Telegram webhook requests in wizardgram with bot.handle_webhook." />
+    <meta name="twitter:image" content="https://daddymaou.github.io/wizardgram/assets/img/og-image.svg" />
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/tokens.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/themes.css" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('wizardgram-theme');
+          var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+        } catch (error) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+  </head>
+  <body data-page="webhooks" data-root=".." data-current-path="docs/webhooks.html">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header id="site-header"></header>
+    <div class="page-shell">
+      <div class="page-layout">
+        <aside id="sidebar" class="sidebar" aria-label="Documentation navigation"></aside>
+
+        <main id="main-content" class="content-wrap">
+          <div class="page-hero">
+            <div class="page-hero__eyebrow">
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M15 4l5 9 10 5-10 5-5 9-5-9-10-5 10-5 5-9z" fill="currentColor"/>
+              </svg>
+              Spells
+            </div>
+            <div class="page-hero__title-wrap">
+              <h1>Webhooks</h1>
+            </div>
+            <svg class="title-wave" viewBox="0 0 360 24" aria-hidden="true">
+              <path d="M0 14c26-12 44-12 72 0s47 12 72 0 44-12 70 0 47 12 71 0 45-12 75 0" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <p class="page-hero__summary">Accept Telegram updates from a webhook endpoint.</p>
+          </div>
+
+          <div class="article-wrap">
+            <article class="doc">
+              <section>
+                <h2>Webhook endpoint</h2>
+                <div class="code-block">
+                  <div class="code-block__header"><span class="code-block__lang">python</span><button class="copy-button" type="button" aria-label="Copy webhook example">Copy</button></div>
+                  <code data-lang="python">async def telegram_webhook(request):
+    return await bot.handle_webhook(request)</code>
+                </div>
+                <p>This is the project’s webhook pattern: pass the request object to the bot and let it handle the incoming Telegram update.</p>
+              </section>
+
+              <section>
+                <h2>Webhook lifecycle</h2>
+                <p>Set the URL once with <code>await bot.set_webhook(...)</code>, remove it with <code>await bot.delete_webhook()</code>, and close the bot on shutdown with <code>await bot.close()</code>.</p>
+              </section>
+            </article>
+
+            <aside class="page-aside">
+              <nav class="page-toc" id="page-toc" aria-label="On this page"></nav>
+            </aside>
+          </div>
+
+          <nav class="page-nav" aria-label="Page navigation"></nav>
+        </main>
+      </div>
+    </div>
+
+    <footer id="site-footer" class="site-footer"></footer>
+    <noscript>
+      <nav aria-label="Documentation links">
+        <ul>
+          <li><a href="../index.html">Welcome</a></li>
+          <li><a href="./install.html">Install</a></li>
+          <li><a href="./quickstart.html">Quickstart</a></li>
+          <li><a href="./middleware.html">Middleware</a></li>
+          <li><a href="./bot-api-coverage.html">Bot API coverage</a></li>
+          <li><a href="./scenes-fsm.html">Scenes &amp; FSM</a></li>
+          <li><a href="./keyboards.html">Keyboards</a></li>
+          <li><a href="./webhooks.html">Webhooks</a></li>
+          <li><a href="./file-uploads.html">File uploads</a></li>
+          <li><a href="./examples.html">Examples</a></li>
+          <li><a href="./coverage-confidence.html">Coverage confidence</a></li>
+          <li><a href="./project-layout.html">Project layout</a></li>
+          <li><a href="./contributing.html">Contributing &amp; license</a></li>
+        </ul>
+      </nav>
+    </noscript>
+    <script type="module" src="../assets/js/main.js"></script>
+  </body>
+</html>

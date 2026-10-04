@@ -1,0 +1,157 @@
+:root {
+  --color-bg: #f4ecd8;
+  --color-bg-strong: #efe2c5;
+  --color-surface: rgba(255, 255, 255, 0.36);
+  --color-surface-strong: #f9f2e4;
+  --color-panel: #fbf7ef;
+  --color-panel-alt: #f0e3bf;
+  --color-ink: #2a2438;
+  --color-ink-soft: #4a4157;
+  --color-accent: #6d4c88;
+  --color-accent-strong: #4b355e;
+  --color-gold: #c29b42;
+  --color-gold-soft: #ead49c;
+  --color-border: rgba(42, 36, 56, 0.18);
+  --color-success: #2f6f4f;
+  --color-warning: #8b5e20;
+  --color-shadow: rgba(42, 36, 56, 0.18);
+  --color-code-bg: rgba(42, 36, 56, 0.06);
+  --color-code-text: #281d35;
+  --color-link: #4b355e;
+  --font-display: "Kalam", "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
+  --font-body: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", monospace;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  --radius-1: 12px 18px 10px 16px;
+  --radius-2: 14px 22px 12px 24px;
+  --radius-3: 18px 28px 16px 22px;
+  --radius-4: 22px 12px 24px 14px;
+
+  --shadow-soft: 0 10px 28px rgba(42, 36, 56, 0.08);
+  --shadow-gold: 0 10px 0 rgba(194, 155, 66, 0.45);
+
+  --content-width: 72rem;
+  --sidebar-width: 18rem;
+  --transition: 180ms ease;
+  --outline: 3px solid rgba(109, 76, 136, 0.5);
+  --max-line: 60ch;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #17142a;
+    --color-bg-strong: #1d1833;
+    --color-surface: rgba(30, 26, 44, 0.82);
+    --color-surface-strong: #211c39;
+    --color-panel: #201b39;
+    --color-panel-alt: #2c2347;
+    --color-ink: #f6eddb;
+    --color-ink-soft: #d8cdb5;
+    --color-accent: #c9a4ee;
+    --color-accent-strong: #e7d1ff;
+    --color-gold: #e3b863;
+    --color-gold-soft: #f0d798;
+    --color-border: rgba(246, 237, 219, 0.18);
+    --color-success: #7cd3a3;
+    --color-warning: #f1bf69;
+    --color-shadow: rgba(10, 8, 18, 0.55);
+    --color-code-bg: rgba(246, 237, 219, 0.06);
+    --color-code-text: #f3ebdc;
+    --color-link: #e7d1ff;
+  }
+}
+
+:root[data-theme="light"] {
+  --color-bg: #f4ecd8;
+  --color-bg-strong: #efe2c5;
+  --color-surface: rgba(255, 255, 255, 0.36);
+  --color-surface-strong: #f9f2e4;
+  --color-panel: #fbf7ef;
+  --color-panel-alt: #f0e3bf;
+  --color-ink: #2a2438;
+  --color-ink-soft: #4a4157;
+  --color-accent: #6d4c88;
+  --color-accent-strong: #4b355e;
+  --color-gold: #c29b42;
+  --color-gold-soft: #ead49c;
+  --color-border: rgba(42, 36, 56, 0.18);
+  --color-success: #2f6f4f;
+  --color-warning: #8b5e20;
+  --color-shadow: rgba(42, 36, 56, 0.18);
+  --color-code-bg: rgba(42, 36, 56, 0.06);
+  --color-code-text: #281d35;
+  --color-link: #4b355e;
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #17142a;
+  --color-bg-strong: #1d1833;
+  --color-surface: rgba(30, 26, 44, 0.82);
+  --color-surface-strong: #211c39;
+  --color-panel: #201b39;
+  --color-panel-alt: #2c2347;
+  --color-ink: #f6eddb;
+  --color-ink-soft: #d8cdb5;
+  --color-accent: #c9a4ee;
+  --color-accent-strong: #e7d1ff;
+  --color-gold: #e3b863;
+  --color-gold-soft: #f0d798;
+  --color-border: rgba(246, 237, 219, 0.18);
+  --color-success: #7cd3a3;
+  --color-warning: #f1bf69;
+  --color-shadow: rgba(10, 8, 18, 0.55);
+  --color-code-bg: rgba(246, 237, 219, 0.06);
+  --color-code-text: #f3ebdc;
+  --color-link: #e7d1ff;
+}
+
+@font-face {
+  font-family: "Kalam";
+  src: url("../fonts/Kalam-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kalam";
+  src: url("../fonts/Kalam-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SourceSerif";
+  src: url("../fonts/SourceSerif4-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SourceSerif";
+  src: url("../fonts/SourceSerif4-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

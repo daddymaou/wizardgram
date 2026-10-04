@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="wizardgram documentation cover">
+  <rect width="1200" height="630" fill="#f4ecd8"/>
+  <rect x="70" y="70" width="1060" height="490" rx="34" fill="#fbf7ef" stroke="#2a2438" stroke-width="3"/>
+  <path d="M188 238c0-65 52-117 117-117 36 0 70 16 93 44 15 18 26 41 33 66 8 29 22 52 45 69 20 15 39 24 62 29 14 3 29 5 44 5 57 0 109-18 151-55l21 56h-68l-131 64c-18 9-38 14-59 14-65 0-120-32-151-80-20-30-33-71-33-112v-18z" fill="#6d4c88" opacity="0.12"/>
+  <text x="140" y="252" font-size="98" font-family="Georgia, serif" fill="#2a2438">wizardgram</text>
+  <text x="140" y="332" font-size="58" font-family="Georgia, serif" fill="#4a4157">Async Telegram bot framework for Python.</text>
+  <text x="140" y="404" font-size="38" font-family="Verdana, sans-serif" fill="#6d4c88">Install • Middleware • Scenes • Webhooks • Files</text>
+  <circle cx="1015" cy="178" r="30" fill="#c29b42"/>
+  <path d="M896 220l20 40 42 20-42 20-20 40-20-40-42-20 42-20 20-40z" fill="#c29b42" opacity="0.8"/>
+</svg>

@@ -1,0 +1,101 @@
+.content-wrap {
+  min-width: 0;
+}
+
+.doc p,
+.doc li,
+.doc dd,
+.doc dt,
+.doc blockquote,
+.doc table {
+  font-size: 1.03rem;
+}
+
+.doc p {
+  margin: 1rem 0;
+}
+
+.doc a {
+  word-break: break-word;
+}
+
+.doc blockquote {
+  margin: 1.5rem 0;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid var(--color-gold);
+  background: rgba(194, 155, 66, 0.08);
+  border-radius: 0 var(--radius-2) var(--radius-2) 0;
+}
+
+.doc code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: rgba(42, 36, 56, 0.05);
+  padding: 0.12rem 0.33rem;
+  border-radius: 0.35rem;
+}
+
+.doc pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.doc .highlight {
+  font-weight: 700;
+}
+
+.doc .lead {
+  font-size: 1.15rem;
+  color: var(--color-ink-soft);
+}
+
+.doc .status-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.doc .status-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.doc .status-list li::before {
+  content: "✦";
+  color: var(--color-gold);
+}
+
+.doc .no-wrap {
+  white-space: nowrap;
+}
+
+.page-hero__title-wrap h1 {
+  margin: 0;
+}
+
+.margin-note {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-2);
+  padding: 1rem;
+  color: var(--color-ink-soft);
+}
+
+.margin-note h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.margin-note ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.margin-note li + li {
+  margin-top: 0.5rem;
+}
